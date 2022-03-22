@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _copy();
     } catch (e) {
       setState(() {
-        dartModel = "json 格式有误";
+        dartModel = "json error!";
       });
     }
   }
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Clipboard.setData(ClipboardData(text: dartModel));
     const snackBar = SnackBar(
       content: Text(
-        '复制成功!',
+        'Copy successfully!',
         style: TextStyle(fontSize: 20),
       ),
     );
